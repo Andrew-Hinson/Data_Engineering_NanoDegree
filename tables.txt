@@ -1,0 +1,18 @@
+Table Name: transactions2 
+column 0: transaction Id
+column 1: Customer Name
+column 2: Cashier Id
+column 3: Year
+
+Table Name: albums_sold
+column 0: Album Id
+column 1: Transaction Id
+column 3: Album Name
+
+Table Name: employees
+column 0: Employee Id
+column 1: Employee Name
+
+Table Name: sales
+column 0: Transaction Id
+column 1: Amount Spent
