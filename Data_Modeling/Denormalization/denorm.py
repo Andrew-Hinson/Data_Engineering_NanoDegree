@@ -1,10 +1,11 @@
 import psycopg2
-
-
+import PIvariables
 # extablish connection to database and set variables connection and cursur
 
+p = PIvariables.password
+
 try: 
-    conn = psycopg2.connect("host=localhost dbname=music user=postgres password=*****")
+    conn = psycopg2.connect("host=localhost dbname=music user=postgres password={}".format(p))
     print('connected to new database')
 except psycopg2.Error as e: 
     print("Error: Could not make connection to the Postgres database")
